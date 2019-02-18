@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test1.exception;
+package test1;
+
+import java.util.Set;
 
 /**
  *
  * @author Robert.Tenadze
  */
-public class FileIsEmptyException extends Exception {
+public interface Expression {
 
-    public FileIsEmptyException() {
-    }
-    public FileIsEmptyException(String msg) {
-        super(msg);
-    }
+    public boolean calculate(Set<String> knownFacts);
+
 }
